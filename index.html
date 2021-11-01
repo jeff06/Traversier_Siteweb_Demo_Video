@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"> 
+	<!-- SITE TITLE -->
+	<title>Traversier le passeur</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link rel="icon" 
+      type="image/png" 
+      href="./images/favicon.png">
+
+	<!-- STYLESHEET CSS FILES -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+<!-- navigation section -->
+<div id="navbar" class="navbar navbar-fixed-top custom-navbar" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand"><span class="bold">Traversier le passeur</span></a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right" style="margin-right: 110px; padding-left:100px;">
+				<li><a href="#home" class="smoothScroll" data-key="accueil"></a></li>
+				<li><a href="#about" class="smoothScroll" data-key="tarifsHoraire"></a></li>
+				<li><a href="#portfolio" class="smoothScroll" data-key="vuePanoramique"></a></li>
+				<li><a href="#contact" class="smoothScroll" data-key="nousJoindre"></a></li>
+				<li><a href="#eng" id="langEn" onclick="changeLang('en')">English</a></li>
+				<li><a href="#fr" id="langFr" onclick="changeLang('fr')" style="display:none;">Français</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- home section -->
+<div id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h3><span class="bold mobileText" data-key="slogantEntete"></h3>
+				<h1 class="heading mobileText" data-key="slogantSousEntete"></h1>
+				<a href="#about" class="smoothScroll btn btn-default mobileText" data-key="tarifsHoraire"></a>
+				<video id="background-video" autoplay loop muted>
+					<source src="images/header.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+	</div>		
+</div>
+
+<!-- tarifs et horaire section -->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center">
+				<h1 class="heading bold" data-key="tarifsHoraire"></h1>
+				<h2 class="subheading errorText" data-key="informationUrgente"></h2>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
+				<i class="fa fa-dollar"></i>
+				<div>
+					<h3 style="display: inline-block;" data-key="tarif"></h3>
+					<h3 style="display: inline-block;" id="getyear"></h3>
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<th data-key="typeTransport"></th>
+							<th data-key="prix"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-key="pieton"></td>
+							<td>2.00$</td>
+						</tr>
+						<tr>
+							<td data-key="velo"></td>
+							<td>2.00$</td>
+						</tr>
+						<tr>
+							<td data-key="motoVTT"></td>
+							<td>5.00$</td>
+						</tr>
+						<tr>
+							<td data-key="cac2P"></td>
+							<td>7.00$</td>
+						</tr>
+						<tr>
+							<td data-key="autoTyrexCac4Place"></td>
+							<td>10.00$</td>
+						</tr>
+						<tr>
+							<td data-key="pickup6"></td>
+							<td>11.00$</td>
+						</tr>
+						<tr>
+							<td data-key="autobus"></td>
+							<td>20.00$ - 46.00$</td>
+						</tr>
+					</tbody>
+					<thead>
+						<th data-key="camions"></th>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-key="cube"></td>
+							<td>12.00$ - 18.00$</td>
+						</tr>
+						<tr>
+							<td data-key="10roues"></td>
+							<td>17.00$</td>
+						</tr>
+						<tr>
+							<td data-key="12roues"></td>
+							<td>19.00$</td>
+						</tr>
+						<tr>
+							<td data-key="14roues"></td>
+							<td>23.00$</td>
+						</tr>
+					</tbody>
+					<thead>
+						<tr>
+							<th data-key="remorque">)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-key="max18"></td>
+							<td>5.00$</td>
+						</tr>
+						<tr>
+							<td data-key="18_26"></td>
+							<td>8.00$</td>
+						</tr>
+						<tr>
+							<td data-key="26Plus"></td>
+							<td>10.00$</td>
+						</tr>
+						<tr>
+							<td data-key="pourVelo">Pour vélo</td>
+							<td>1.00$</td>
+						</tr>
+						<tr>
+							<td data-key="pourMotoVTT">Pour moto/VTT</td>
+							<td>2.00$</td>
+						</tr>
+						<tr>
+							<td>Sidecar</td>
+							<td>2.00$</td>
+						</tr>
+					</tbody>
+					<thead>
+						<tr>
+							<th data-key="forfaits"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th style="text-align:center;" colspan="2" data-key="automobile"></th>
+						</tr>
+						<tr>
+							<td data-key="10Traverse"></td>
+							<td>90.00$</td>
+						</tr>
+						<tr>
+							<td data-key="20Traverse"></td>
+							<td>150.00$</td>
+						</tr>
+						<tr>
+							<th style="text-align:center;" colspan="2" data-key="motoVTT"></th>
+						</tr>
+						<tr>
+							<td data-key="10Traverse"></td>
+							<td>40.00$</td>
+						</tr>
+						<tr>
+							<th style="text-align:center;" colspan="2" data-key="remorques10Travers"></th>
+						</tr>
+						<tr>
+							<td data-key="max18"></td>
+							<td>40.00$</td>
+						</tr>
+						<tr>
+							<td data-key="18_26"></td>
+							<td>70.00$</td>
+						</tr>
+						<tr>
+							<td data-key="26Plus"></td>
+							<td>90.00$</td>
+						</tr>
+						<tr>
+							<th style="text-align:center;" colspan="2" data-key="pickup6"></th>
+						</tr>
+						<tr>
+							<td data-key="10Traverse"></td>
+							<td>100.00$</td>
+						</tr>
+					</tbody>
+				</table>
+				<hr />
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.4s">
+				<i class="fa fa-calendar"></i>
+					<h3 data-key="horaire"></h3>
+					<p data-key="dateOuverture"></p>
+					<p data-key="lundiSamediOuverture"></p>
+					<p data-key="dimancheOuverture"></p>
+					<h6 data-key="changementSansPreavis"></h6>
+					<hr />
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<i class="fa fa-exclamation"></i>
+				<h3 data-key="pointImportant"></h3>
+				<div>
+					<h4 class="errorText" data-key="payment"></h4>
+					<dl>
+						<dt data-key="poidsMax"></dt>
+						<dd data-key="40Tonnes"></dd>
+						<dd data-key="50Tonnes"></dd>
+					</dl>
+					<p data-key="derniereTraverse"></p>
+				</div>
+				<hr />
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- portfolio section -->
+<!-- img size = 640x426-->
+<div id="portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h1 class="heading bold" data-key="vuePanoramique"></h1>
+				<h2 class="subheading" data-key="vuePanoramiqueSousEntete"></h2>
+				<div class="iso-section">
+               		<div class="iso-box-section wow fadeIn" data-wow-delay="0.4s">
+               			<div class="iso-box-wrapper col4-iso-box">
+							<div class="iso-box col-lg-4 col-md-4 col-sm-4 col-xs-12">
+								<a href="images/1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/1.jpg" alt="portfolio img"></a>
+               				 </div>
+
+               				 <div class="iso-box col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               				 	<a href="images/2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/2.jpg" alt="portfolio img"></a>
+               				 </div>
+
+               				 <div class="iso-box col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               				 	<a href="images/3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/3.jpg" alt="portfolio img"></a>
+               				 </div>
+
+               				 <div class="iso-box col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               				 	<a href="images/4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/4.jpg" alt="portfolio img"></a>
+               				 </div>
+
+               				 <div class="iso-box col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               				 	<a href="images/5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/5.jpg" alt="portfolio img"></a>
+               				 </div>
+
+               				 <div class="iso-box col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               				 	<a href="images/6.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/6.jpg" alt="portfolio img"></a>
+               				 </div>
+
+               				 <div class="iso-box col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               				 	<a href="images/7.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/7.jpg" alt="portfolio img"></a>
+               				 </div>
+
+               				 <div class="iso-box col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               				 	<a href="images/8.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/8.jpg" alt="portfolio img"></a>
+               				 </div>
+
+               				 <div class="iso-box col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               				 	<a href="images/9.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/9.jpg" alt="portfolio img"></a>
+               				 </div>
+               			</div>
+               		</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		
+
+<!-- contact section -->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center">
+				<h1 class="heading bold" data-key="nousJoindre"></h1>
+				<h2 class="subheading" data-key="question"></h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="contact-info-box col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
+				<i class="fa fa-phone"></i>
+					<h3>450-537-3412</h3>
+			</div>
+			<div class="contact-info-box col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
+				<i class="fa fa-envelope-o"></i>
+					<h3>info@traversierlepasseur.com</h3>
+			</div>
+			<div class="contact-info-box col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=0.6s">
+				<i class="fa fa-map-marker"></i>
+				<h3>
+					Traversier Le Passeur inc.
+					<br />
+					42 Route du Long Sault
+					<br />
+					Saint-André-d’Argenteuil, 
+					<br />
+					QC J0V 1X0
+				</h3>
+			</div>
+			<div class="contact-info-box col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=0.6s">
+				<i class="fa fa-map-marker"></i>
+				<h3>
+					Traversier Le Passeur inc.
+					<br />
+					642 Chem. des Outaouais, 
+					<br />
+					Pointe-Fortune, 
+					<br />
+					QC J0P 1N0
+				</h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<ul class="social-icon">
+					<li><a style="color: white;" href="https://www.facebook.com/TraversierlePasseur/" class="fa fa-facebook wow bounceIn" data-wow-delay="0.2s" target="_parent"></a></li>
+					<li><a style="color: white;" href="#" class="fa fa-twitter wow bounceIn" data-wow-delay="0.3s"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- copyright section -->
+<div id="copyright">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-sm-8 col-xs-9">
+				<p>Copyright © <span id="getyear"></span> Traversier Le Passeur inc.</p>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-3">
+				<a href="#home" class="smoothScroll fa fa-angle-up"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- JAVASCRIPT JS FILES -->	
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
